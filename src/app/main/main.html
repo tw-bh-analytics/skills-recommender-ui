@@ -7,18 +7,22 @@
         <form>
           <div class="row">
             <div class="large-12 columns">
-              <input type="text"
-                ng-model="main.person" />
-              <angucomplete-alt id="members"
+              <angucomplete-alt
                 placeholder="start to type your name here..."
                 pause="400"
-                selected-object="main.person"
-                remote-url="http://localhost:4567/person?name="
-                remote-url-data-field="results"
+                selected-object="personFn"
+                remote-url="api/person?name="
                 title-field="name" />
             </div>
           </div>
         </form>
+        <div class="row">
+          <ul>
+            <li ng-repeat="r in recommendation track by r.id">
+              {{ r.name }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
