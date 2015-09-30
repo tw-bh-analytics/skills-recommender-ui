@@ -25,6 +25,24 @@
   }
 }
 
+ul.recommendations {
+  list-style-type: none;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label,
+input[type='radio']:checked + label:active {
+  background-color: salmon;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-group.toggle li:not(first-child) {
+  margin: 0 -1.0rem;
+}
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your less files automatically
