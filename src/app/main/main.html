@@ -26,11 +26,11 @@
               <div class="small-9 small-centered columns">
                 <ul class="button-group round toggle">
                   <li>
-                    <input type="radio" id="good{{r.id}}" ng-model="r.feedback" value="true" ng-change="changedFeedbacks()" />
+                    <input type="radio" id="good{{r.id}}" ng-model="r.feedback" ng-value="true" ng-change="changedFeedbacks()" />
                     <label class="button" for="good{{r.id}}">Good</label>
                   </li>
                   <li>
-                    <input type="radio" id="bad{{r.id}}" ng-model="r.feedback" value="false" ng-change="changedFeedbacks()" />
+                    <input type="radio" id="bad{{r.id}}" ng-model="r.feedback" ng-value="false" ng-change="changedFeedbacks()" />
                     <label class="button" for="bad{{r.id}}">Bad</label>
                   </li>
                 </ul>
